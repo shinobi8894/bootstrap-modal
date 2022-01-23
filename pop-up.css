@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Montserrat&family=Poppins&family=Raleway&family=Roboto&display=swap');
+
+.modal{
+    padding-left: 0px;
+}
+.modal-dialog {
+    position: relative;
+    overflow: hidden;
+    font-family: Poppins;
+}
+
+.modal-content {
+    background:linear-gradient(#000000,#114357);
+    overflow: hidden;
+    border: none;
+    padding-top: 0px;
+}
+
+.card-img {
+    max-width: 80px;
+    margin-bottom: 10px;
+    height: auto;
+}
+.modal-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: white;
+    padding-bottom: 0px;
+}
+.header-text{
+    font-size: 25px;
+    font-family: Gloria Hallelujah;
+    max-width: 500px;
+    text-align: center;
+}
+.card h4{
+    font-family: Gloria Hallelujah;
+}
+.modal-header button{
+    color: white;
+}
+.logo-header{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.close{
+    position: absolute;
+    top: 40px;
+    border: 1px solid white !important;
+    right: 40px;
+    width: 40px;
+    height:40px;
+    border-radius: 20px;
+    padding: 0px !important;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: row wrap;
+    list-style: none;
+    padding-left: 0px;
+    gap: 20px;
+    padding-top: 20px;
+    overflow-y:auto;
+}
+.card-box::-webkit-scrollbar{
+    width:5px;
+    background-color: #eee;
+}
+.card-box::-webkit-scrollbar-thumb{
+    background-color: #eed;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    width: 230px;
+    height: 280px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.card h5,div{
+    font-size: 13px;
+}
+.header-text::before{
+    content:'Add shipping protection.';
+    display:block;
+    
+}
+.header-text::after{
+    content:'Sit back and relax,we got you';
+    display:block;
+}
+
+.modal-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: relative;
+    color: white;
+    border: none;
+}
+
+.copy-text {
+    text-align: center;
+    font-size: 12px;
+}
+
+.intro-text {
+    font-size: 10px;
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+}
+.btn-row{
+    text-align:center;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:991px) {
+    .card-box{
+        height:550px;
+    }
+    .card{
+        flex-direction: row;
+        width:100%;
+        height:100%;
+    }
+    .card-text{
+        margin-left: 10px;
+    }
+    *{
+        text-align: left;
+    }
+    .header-text{
+        text-align: left;
+        width: 100%;
+        font-size: 28px;
+    }
+    .header-text::before{
+        content:"Add shipping protection."
+    }
+    .header-text::after{
+        content:'Sit back and relax.'
+    }
+    .modal-header{
+        padding-left: 35px;
+        padding-top: 30px;
+    }
+    .logo-header{
+        text-align: left;
+    }
+    .card-logo{
+        max-width: 140px;
+    }
+}
+
+
+
+/*Modal animations */
+
+.swing {
+    -webkit-transform-origin: top center;
+    -ms-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-animation-name: swing;
+    animation-name: swing;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes swing {
+    20% {
+        -webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg);
+    }
+
+    40% {
+        -webkit-transform: rotate3d(0, 0, 1, -10deg);
+        transform: rotate3d(0, 0, 1, -10deg);
+    }
+
+    60% {
+        -webkit-transform: rotate3d(0, 0, 1, 5deg);
+        transform: rotate3d(0, 0, 1, 5deg);
+    }
+
+    80% {
+        -webkit-transform: rotate3d(0, 0, 1, -5deg);
+        transform: rotate3d(0, 0, 1, -5deg);
+    }
+
+    100% {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+}
+
+@keyframes swing {
+    20% {
+        -webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg);
+    }
+
+    40% {
+        -webkit-transform: rotate3d(0, 0, 1, -10deg);
+        transform: rotate3d(0, 0, 1, -10deg);
+    }
+
+    60% {
+        -webkit-transform: rotate3d(0, 0, 1, 5deg);
+        transform: rotate3d(0, 0, 1, 5deg);
+    }
+
+    80% {
+        -webkit-transform: rotate3d(0, 0, 1, -5deg);
+        transform: rotate3d(0, 0, 1, -5deg);
+    }
+
+    100% {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+}
+
+
+
+/* Wave animation */
+
+.ocean {
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:#015971;
+}
+
+.wave {
+    background: url(./assets/wave.svg) repeat-x;
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+}
+
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes swell {
+    0%, 100% {
+        transform: translate3d(0, -25px, 0);
+    }
+
+    50% {
+        transform: translate3d(0, 5px, 0);
+    }
+}
